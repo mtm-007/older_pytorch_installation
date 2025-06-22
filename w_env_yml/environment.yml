@@ -11,7 +11,7 @@ dependencies:
   - pip:
     # Install legacy PyTorch via direct wheel URLs
     - https://download.pytorch.org/whl/cu90/torch-0.3.1-cp36-cp36m-linux_x86_64.whl
-    - https://download.pytorch.org/whl/cu90/torchvision-0.2.1-py2.py3-none-any.whl
+    - torchvision==0.2.1 -f https://download.pytorch.org/whl/cu90/torch_stable.html
     
     # Other dependencies
     - torchtext==0.2.3

@@ -13,3 +13,11 @@ Trying to install older version of pytorch and fastai
   - [pip install sentencepiece==0.1.83]
 * pip install opencv-python==4.1.2.30
 * pip install bcolz==1.2.1 or [conda install -c conda-forge bcolz] under the virtual env
+
+
+## Using pipenv for pipfile
+- installing pipenv under the the virtual conda env 
+  -   pip uninstall pipenv virtualenv virtualenv-clone
+      pip install virtualenv==16.7.9
+      pip install pipenv==2018.11.26
+  - pipenv --rm

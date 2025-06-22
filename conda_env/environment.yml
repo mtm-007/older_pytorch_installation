@@ -1,0 +1,41 @@
+name: older_pytorch
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # 1) Core interpreter & CUDA
+  - python=3.6
+  - cudatoolkit=9.0
+
+  # 2) bcolz as a conda-forge binary
+  - bcolz=1.2.0
+
+  # 3) pip itself, so we can pip-install the rest
+  - pip
+
+  # 4) Everything else via pip, including legacy torch/cu90
+  - pip:
+    # point pip at the old PyTorch cu90 wheels
+    - -f https://download.pytorch.org/whl/cu90
+
+    # legacy PyTorch & vision
+    - torch==0.3.1
+    - torchvision==0.2.1
+
+    # the rest of your pinned packages
+    - torchtext==0.2.3
+    - cython==0.29.24
+    - opencv-python==4.1.2.30
+    - pillow==8.4.0
+    - MarkupSafe<2.1
+    - jinja2<3.0
+    - requests==2.27.1
+    - packaging<21.0
+    - typing-extensions<4.0
+    - sentencepiece==0.1.83
+    - numpy==1.19.5
+    - pandas==1.1.5
+    - scipy==1.5.4
+    - tqdm==4.64.1
+    - fastai==0.7

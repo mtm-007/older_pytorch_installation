@@ -1,20 +1,25 @@
-# main python
-python==3.6.13
+# main python: python==3.6.13
 
 # CRITICAL - Must be pinned to exact versions (high conflict risk)
 
-torch==0.3.1 -f https://download.pytorch.org/whl/cu90/torch_stable.html
-torchvision==0.2.1 -f https://download.pytorch.org/whl/cu90/torch_stable.html
+#torch==0.3.1 -f https://download.pytorch.org/whl/cu90/torch_stable.html
+#torchvision==0.2.1 -f https://download.pytorch.org/whl/cu90/torch_stable.html
+
+torch==0.3.1 --index https://download.pytorch.org/whl/cu90/torch_stable.html
+torchvision==0.2.1 --index https://download.pytorch.org/whl/cu90/torch_stable.html
+
+
 torchtext==0.2.3
-numpy==1.19.5
-pandas==1.1.5
-scipy==1.5.4
+#numpy==1.19.5
+#pandas==1.1.5
+#scipy==1.5.4
 
 # PROBLEMATIC - Often cause build/compatibility issues
+Cython==0.29.24
 bcolz==1.2.1
 opencv-python==4.1.2.30
 Pillow==8.4.0
 sentencepiece==0.1.83
 
-#main fastai=0.7
-fastai=0.7
+# main fastai=0.7
+fastai==0.7

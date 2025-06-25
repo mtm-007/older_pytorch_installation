@@ -7,7 +7,10 @@ dependencies:
   - python=3.6
   - cudatoolkit=9.0
   - bcolz=1.2.0
-  
+  - xorg-libsm    # Resolves libSM.so.6
+  - xorg-libxext  # Additional X11 extension lib
+  - xorg-libxrender  # Rendering library
+
   - pip
   - pip:
     # Install legacy PyTorch via direct wheel URLs

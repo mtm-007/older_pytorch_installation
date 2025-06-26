@@ -1,23 +1,17 @@
-# older_pytorch_installation
-Trying to install older version of pytorch and fastai
-#### first and most create a vertual env to get python=3.6
-## Older version fastai installation(fastai==0.7) at june [2025]
-- For installing fastai=0.7 
-* python=3.6
-* older cython to compile with python=3.6
- - [conda install cython=0.29]
-* torch=0.3.1 and torchvission=0.2:
-  for installing torch=0.3 and torchvission=0.21 normal channels with pypi will not work use:
-  - [pip install torch==0.3.1 -f https://download.pytorch.org/whl/cu90/torch_stable.html]
-  - [pip install torchvision==0.2.1 -f https://download.pytorch.org/whl/cu90/torch_stable.html]
-  - [pip install sentencepiece==0.1.83]
-* pip install opencv-python==4.1.2.30
-* pip install bcolz==1.2.1 or [conda install -c conda-forge bcolz] under the virtual env
+## To install old torch=3.1 and Fastai=0.7 libraries(2025 edition)
+- use the environment.yml file to create conda env with all the neccessary installs and dependencies
 
 
-## Using pipenv for pipfile
-- installing pipenv under the the virtual conda env 
-  -   pip uninstall pipenv virtualenv virtualenv-clone
-      pip install virtualenv==16.7.9
-      pip install pipenv==2018.11.26
-  - pipenv --rm
+### create a virtual env with 
+- conda env create -f environment.yml
+
+## for lighting like restricted new env creation
+ - first 
+    conda install python=3.6
+ - conda env update --file environment.yml or conda env update -f environment.yml
+
+
+ ### Get dataset from fastai built in dataset without the package lib
+ - this installs fastai in a virtual env, downloads dataset, remove the virtual env. But keep the data
+ - use download_pascal_2007.sh script.
+ - change the dataset name (i.e here PASCAL_2007)

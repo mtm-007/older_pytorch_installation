@@ -15,3 +15,8 @@
  - this installs fastai in a virtual env, downloads dataset, remove the virtual env. But keep the data
  - use download_pascal_2007.sh script.
  - change the dataset name (i.e here PASCAL_2007)
+
+
+ ## Tip
+ - put the environment.yml in a folder, otherwise github detects the setup and tries to create the environment automatically
+ - avoid that if you want full control of your set up

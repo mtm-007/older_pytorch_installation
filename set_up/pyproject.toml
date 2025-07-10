@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "older_pytorch"
+version = "0.1.0"
+requires-python = "==3.6.*"
+
+dependencies = [
+  "torchtext==0.2.3",
+  "cython==0.29.24",
+  "opencv-python==4.1.2.30",
+  "pillow==8.4.0",
+  "MarkupSafe<2.1",
+  "jinja2<3.0",
+  "requests==2.27.1",
+  "packaging<21.0",
+  "typing-extensions<4.0",
+  "sentencepiece==0.1.83",
+  "numpy==1.15.4",
+  "pandas==1.1.5",
+  "scipy==1.5.4",
+  "tqdm==4.64.1",
+  "fastai==0.7"
+]

@@ -1,4 +1,6 @@
-## To install old torch=3.1 and Fastai=0.7 libraries(2025 edition)
+
+
+#### How to install old torch=3.1 and Fastai=0.7 libraries(2025 edition)
 - use the environment.yml file to create conda env with all the neccessary installs and dependencies
 
 

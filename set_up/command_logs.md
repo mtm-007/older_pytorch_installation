@@ -21,3 +21,7 @@ Trying to install older version of pytorch and fastai
       pip install virtualenv==16.7.9
       pip install pipenv==2018.11.26
   - pipenv --rm
+
+#### lightning studio name
+- bold-coffee-wzi    -> aws
+- big-green-7ozg.    -> gcp

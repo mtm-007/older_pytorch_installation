@@ -11,7 +11,7 @@ python - <<EOF
 from fastai.vision.all import untar_data, URLs
 import shutil, os
 
-path = untar_data(URLs.cifar10)
+path = untar_data(URLs.CIFAR)
 save_dir = './data'
 
 os.makedirs(save_dir, exist_ok=True)

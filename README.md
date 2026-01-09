@@ -22,3 +22,7 @@
  ## Tip
  - put the environment.yml in a folder, otherwise github detects the setup and tries to create the environment automatically
  - avoid that if you want full control of your set up
+
+#### ipywidgets tip
+For older ver of Fastai=0.7 to to be compatible with jupyter ipywidgets use conda to get the compatible version instead of pip install
+- conda install -c conda-forge ipywidgets
